@@ -1,0 +1,20 @@
+html{
+margin-left: 250px;
+margin-right: 250px;
+border-color: grey;
+}
+
+h1{
+font-style: underline bold;
+color: Brown;
+}
+
+.box{
+background: linear-gradient(black, white);
+border: black 1px solid;
+padding-bottom: 50px;
+text-align: center;
+color: white;
+box-shadow: 5px 5px 100px black;
+}
+
