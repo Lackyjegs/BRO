@@ -1,0 +1,74 @@
+<head>
+<title>Barrier Reef Orchestra</title>
+<link rel = "stylesheet" href = "bro.css">
+</head>
+<body>
+<header>
+<nav>
+<ul id = "navBar">
+<li class = "navButton"><a href = "index.html">Home</a></li>
+<li class = "navButton"><a href = "bandmembers.html">Band Members</a></li>
+<li class = "navButton"><a href = "events.html">Events</a></li>
+<li class = "navButton"><a href = "signup.html">Sign Up</a></li>
+<li class = "navButton"><a href = "aboutus.html">About Us</a></li>
+<li class = "navButtonEnd"><a href = "support.html">Support Us!</a></li>
+</ul>
+</nav>
+</header>
+<p id = "bar"></br></p>
+<div class = "dog">
+<div class = "photobox">
+<img class = "mySlides" src = "2008-BRO-Slavonic-Swoon-17.jpg">
+<img class = "mySlides" src = "2008-BRO-Slavonic-Swoon-22.jpg">
+<img class = "mySlides" src = "2008-BRO-Slavonic-Swoon-3.jpg">
+<img class = "mySlides" src = "2008-BRO-Slavonic-Swoon-14.jpg">
+<img class = "mySlides" src = "2008-BRO-Slavonic-Swoon-107.jpg">
+<img class = "mySlides" src = "last_night_of_the_proms_bro_dsc0001.jpg">
+<img class = "mySlides" src = "last_night_of_the_proms_bro_dsc0011.jpg">
+<img class = "mySlides" src = "last_night_of_the_proms_bro_dsc0014.jpg">
+<img class = "mySlides" src = "last_night_of_the_proms_bro_dsc0025.jpg">
+<img class = "mySlides" src = "last_night_of_the_proms_bro_dsc0067.jpg">
+<img class = "mySlides" src = "last_night_of_the_proms_bro_dsc0082.jpg">
+</div>
+<ul id = "photocontainer">
+<li><img src = "2008-BRO-Slavonic-Swoon-17.jpg"></li>
+<li><img src = "2008-BRO-Slavonic-Swoon-22.jpg"></li>
+<li><img src = "2008-BRO-Slavonic-Swoon-3.jpg"></li>
+<li><img src = "2008-BRO-Slavonic-Swoon-14.jpg"></li>
+<li><img src = "2008-BRO-Slavonic-Swoon-107.jpg"></li>
+<li><img src = "last_night_of_the_proms_bro_dsc0001.jpg"></li>
+<li><img src = "last_night_of_the_proms_bro_dsc0011.jpg"></li>
+<li><img src = "last_night_of_the_proms_bro_dsc0014.jpg"></li>
+<li><img src = "last_night_of_the_proms_bro_dsc0025.jpg"></li>
+<li><img src = "last_night_of_the_proms_bro_dsc0067.jpg"></li>
+<li><img src = "last_night_of_the_proms_bro_dsc0082.jpg"></li>
+</ul>
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+<footer>
+<div id = "footer">
+<h3>Contact Us</h3>
+<a href = "https://www.facebook.com/pg/nqorchestra/"><p>Facebook</p></a>
+<p>Barrier Reef Orchestra</p>
+<p>PO Box 576    Townsville Qld 4810</p>
+<p>Phone: +61 7 4722 2789</p>
+<p>Email: brotownsville@gmail.com</p>
+</ul>
+</footer>
+
+
